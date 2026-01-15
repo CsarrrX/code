@@ -37,7 +37,7 @@ A diferencia de Python, en R puedes instalar paquetes de dos formas:
 conda install -c conda-forge r-ggplot2 r-dplyr r-scipy -y
 
 ### B. Vía Consola de R (Si no están en Conda)
-# Entra a R y ejecuta:
+Entra a R y ejecuta:
 install.packages('nombre_del_paquete', repos='https://cloud.r-project.org')
 
 *Nota: Si da error de permisos en Fedora, usa: install.packages('pkg', lib='~/R/library')*
@@ -46,10 +46,10 @@ install.packages('nombre_del_paquete', repos='https://cloud.r-project.org')
 ## 🔗 4. Sincronización de Archivos (Jupytext)
 Vincula tu script de Neovim con el Notebook del navegador. Solo una vez por archivo.
 
-# Para Python
+- Para Python:
 jupytext --set-formats ipynb,py:hydrogen --sync archivo.py
 
-# Para R
+- Para R:
 jupytext --set-formats ipynb,R:hydrogen --sync archivo.R
 
 
@@ -68,5 +68,5 @@ jupytext --set-formats ipynb,R:hydrogen --sync archivo.R
 
 
 ## 💡 Marcadores de Celda Rápidos
-# %%            -> Celda de Código.
-# %% [markdown]  -> Celda de Texto / LaTeX.
+- %%            -> Celda de Código.
+- %% [markdown]  -> Celda de Texto / LaTeX.
